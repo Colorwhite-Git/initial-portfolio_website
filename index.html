@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width-device-width, initial-scale=1.0">
+        <title>Personal Portforlio Website - Paul Danso Asare</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="https://kit.fontawesome.com/5054431a42.js" crossorigin="anonymous"></script>        
+    </head>
+    <body>
+        <div id="header">
+            <div class="container">
+                <nav>
+                    <img src="images/pd_Logo.png" class="logo">
+                    <ul id="sidemenu">
+                        <li><a href="#header">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <i class="fa-solid fa-xmark" onclick="closemenu()"></i>                
+                    </ul>
+                    <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+                </nav>
+                <div class="header-text">
+                    <p>Software Engineer</p>
+                    <h1>Hi, I'm <span>Paul</span><br>from Germany</h1>
+                </div>
+            </div>
+        </div>
+        <!-- -------------about---------- -->
+        <div id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="about-col-1">
+                        <img src="images/paul_user.jpg">
+                    </div>
+                    <div class="about-col-2">
+                        <h1 class="sub-title">About Me</h1>
+                        <p>Enthusiastic and adaptable aspiring software engineer with a foundation in economics and information studies. 
+                            Eager to apply acquired problem-solving skills and foundational IT knowledge to build a career in software development. 
+                            A fast learner committed to mastering programming languages and tools, driven by a passion for technology and a proactive approach to learning. 
+                            Dedicated to contributing innovative solutions and collaborating within dynamic team environments.</p>
+
+                            <div class="tab-titles">
+                                <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                                <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                                <p class="tab-links" onclick="opentab('education')">Education</p>                                
+                            </div>
+                            <div class="tab-contents active-tab" id="skills">
+                                <ul>
+                                    <li><span>Programming Languages</span><br>Python, JavaScript</li>
+                                    <li><span>Frameworks & Libraries</span><br>HTML, CSS</li>
+                                    <li><span>Web Development</span><br>React</li>
+                                    <li><span>Development Tools</span><br>Git, Shell, VS Code Editor, Vim Editor</li>
+                                    <li><span>Soft Skills</span><br>Problem-solving, Teamwork, Excellent communication, 
+                                        Fast Learner</li>
+                                </ul>
+                            </div>
+                            <div class="tab-contents" id="experience">
+                                <ul>
+                                    <li><span>2022 - Current</span><br>Software Engineer</li>
+                                    <li><span>2019 - 2021</span><br>Finance Officer</li>
+                                    <li><span>2017 - 2018</span><br>Information Service Officer</li>
+                                    <li><span>2016 - 2017</span><br>IT Support (Intership)</li>
+                                </ul>
+                            </div>
+                            <div class="tab-contents" id="education">
+                                <ul>
+                                    <li><span>Current</span><br>MSc. Economics and Institutions at Philipps Universität Marburg, Germany</li>
+                                    <li><span>2017</span><br>BA Economics & Information Studies at University of Ghana-Legon, Ghana</li>
+                                    <li><span>2013</span><br>School Leaving Certification at Prempeh College-Kumasi, Ghana (WASSCE)</li>                                    
+                                </ul>
+                            </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- ----------services---------- -->
+        <div id="services">
+            <div class="container">
+                <h1 class="sub-title">My Services</h1>
+                <div class="services-list">
+                    <div>
+                        </i><i class="fa-solid fa-code"></i>
+                        <h2>Custom Software Development</h2>
+                        <p>I craft bespoke software applications aligned with your unique business needs. 
+                            From conceptualization to deployment, I create solutions that streamline processes, boost efficiency, 
+                            and propel your business toward its goals.</p>
+                            <a href="#">Learn more</a>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-crop"></i>
+                        <h2>Maintenance and Upgrades</h2>
+                        <p>Ensuring your software remains robust and up-to-date is essential. 
+                            I provide ongoing maintenance and upgrade services, guaranteeing your systems are 
+                            optimized, secure, and responsive to technological advancements.</p>
+                            <a href="#">Learn more</a>
+                    </div>
+                    <div>
+                        <i class="fa-brands fa-app-store"></i>
+                        <h2>Consultation and Technical Expertise</h2>
+                        <p>Guidance matters. I offer insights and expertise to assist in your 
+                            tech decisions. From architecture to integration, 
+                            I help navigate the technological landscape, 
+                            ensuring you make informed and effective choices.</p>
+                            <a href="#">Learn more</a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <!-- --------portfolio--------- -->
+        <div id="portfolio">
+            <div class="container">
+                <h1 class="sub-title">My Work</h1>
+                <div class="work-list">
+                    <div class="work">
+                       <img src="images/tic_toe.jpg">
+                       <div class="layer">
+                        <h3>Tic Tac Toe Game</h3>
+                        <p>A classic Tic-Tac-Toe game using JavaScript. Enable two players to take turns marking X and O on a grid, aiming to create a row, column, or diagonal line of their respective symbols. 
+                            Ensure the game has a responsive design and includes logic to determine a winner or declare a draw.</p>
+                            <a 
+                            href="https://codepen.io/freeCodeCamp/full/KzXQgy" 
+                            target="_blank">
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                       </div>
+                    </div>
+                    <div class="work">
+                        <img src="images/calculator.jpg">
+                        <div class="layer">
+                            <h3>JavaScript Calculator</h3>
+                            <p>A user-friendly calculator using JavaScript that performs basic arithmetic operations such as addition, subtraction, multiplication, and division. 
+                                The calculator should have a clean interface allowing users to input numbers and perform calculations in real-time.</p>
+                                <a href="https://codepen.io/freeCodeCamp/full/wgGVVX" 
+                                target="_blank">
+                                <i class="fa-solid fa-arrow-up-right-from-square">                               
+                                </i></a>
+                           </div>
+                     </div>
+                     <div class="work">
+                        <img src="images/work-3.png">
+                        <div class="layer">
+                            <h3>Online Shopping App</h3>
+                            <p>A a simple online shopping application using JavaScript where users can browse products, add items to a cart, and proceed to checkout.
+                                Implement functionalities such as product categories, search functionality, cart management, and a checkout process with mock payment handling.</p>
+                                <a 
+                                href="https://www.bestsecret.com/entrance/index.htm"
+                                target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                           </div>
+                     </div>
+                </div>
+                <a 
+                href="https://www.linkedin.com/in/paul-danso-asare/" 
+                target="_blank" class="btn">See more</a>
+            </div>      
+
+        </div>
+        <!------------contact----------------->
+        <div id="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="contact-left">
+                        <h1 class="sub-title">Contact</h1>
+                        <p><i class="fa-solid fa-paper-plane"></i> pauldasare@gmail.com</p>
+                        <p><i class="fa-solid fa-square-phone"></i>+49(0)151 23567557</p>
+                        <div class="social-icons">
+                            <a href="https://github.com/Colorwhite-Git" target="_blank"><i class="fab fa-github"></i></a>
+                            <a href="https://www.linkedin.com/in/paul-danso-asare/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                            <a href="https://www.linkedin.com/in/paul-danso-asare/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                            <a href="https://twitter.com/PaulDanso12" target="_blank"><i class="fa-brands fa-twitter-square"></i></a>
+                            <a href="https://www.linkedin.com/in/paul-danso-asare/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                            
+                            
+                        </div>
+                        <a href="images/paul_Danso_Asare_cv.pdf" download class="btn btn2">Download CV</a>
+                    </div>
+                    <div class="contact-right">
+                        <form name="submit-to-google-sheet">
+                            <input type="text" name="Name" placeholder="Your Name" required>
+                            <input type="text" name="Email" placeholder="Your Email" required>
+                            <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                            <button type="submit" class="btn btn2">Submit</button>
+                        </form>
+                        <span id="msg"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>Copyright © Paul Danso Asare. Made with <i class="fa-solid fa-heart"></i> from Germany, Marburg</p>
+            </div>
+        </div>
+
+
+
+        <script>
+            var tablinks = document.getElementsByClassName("tab-links");
+            var tabcontents = document.getElementsByClassName("tab-contents");
+            
+            function opentab(tabname){
+                for(tablink of tablinks){
+                    tablink.classList.remove("active-link");
+                }
+                for(tabcontent of tabcontents){
+                    tabcontent.classList.remove("active-tab");
+                }
+                event.currentTarget.classList.add("active-link");
+                document.getElementById(tabname).classList.add("active-tab");
+            }            
+        </script>
+
+        <script>
+            var sidemenu = document.getElementById("sidemenu");
+
+            function openmenu(){
+                sidemenu.style.right = "0";
+            }
+            function closemenu(){
+                sidemenu.style.right = "-200px";
+            }
+
+        </script>
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbxn8HDvKFjVlzgpCTSZ1EdkjtBFJgxdx6tIB3MlL-jqr2v6NwDYSfGh7h6Ilkd1yd0qgw/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+    </body>
+</html>
